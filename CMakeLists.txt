@@ -13,11 +13,14 @@ add_executable(useGeometry useGeometry.cpp)
 add_executable(coordinateTransform coordinateTransform.cpp)
 add_executable(plotTrajectory plotTrajectory.cpp)
 add_executable(visualizeGeometry visualizeGeometry.cpp)
+add_executable(exercise1 exercise1.cpp)
+add_executable(exercise2 exercise2.cpp)
 
 target_link_libraries(eigenMatrix Eigen3::Eigen)
 target_link_libraries(useGeometry Eigen3::Eigen)
 target_link_libraries(coordinateTransform Eigen3::Eigen)
-
+target_link_libraries(exercise1 Eigen3::Eigen)
+target_link_libraries(exercise2 Eigen3::Eigen)
 
 target_link_libraries(plotTrajectory Eigen3::Eigen ${Pangolin_LIBRARIES})
 target_link_libraries(visualizeGeometry Eigen3::Eigen ${Pangolin_LIBRARIES})
